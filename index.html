@@ -81,7 +81,7 @@
                     </section>
                 </div>
             </section>
-            <section class="contents">
+            <section class="contents-c">
                 <h3 class="contents-title">XeoryExtensionの特徴<span><small><br>feature</small></span></h3>
                 <header class="header">
                 </header>
@@ -112,70 +112,65 @@
                 </section>
             </section>
             <section class="contents">
-                <h3 class="contents-title-b">サービス紹介<span>service</span></h3>
-                <header class="header">
-                </header>
-                <section class="service">
-                    <h4 class="service-title">Xeoryカスタマイズ<br><span>Xeory Customize</span></h4>
-                    <p class="service-item"><a href="">カスタマイズ事例を見る</a></p>
-                </section>
-                <section class="service">
-                    <h4 class="service-title">コンサルティング<br><span>Consulting</span></h4>
-                    <p class="service-item"><a href="">コンサルティング事例を見る</a></p>
-                </section>
+                <h3 class="contents-title-b">サービス紹介</h3>
+                <div class="service-container">
+                  <section class="service">
+                      <h4 class="service-title">Xeoryカスタマイズ<span>Xeory Customize</span></h4>
+                      <p class="btn green"><a href="">カスタマイズ事例を見る</a></p>
+                  </section>
+                  <section class="service">
+                      <h4 class="service-title">コンサルティング<span>Consulting</span></h4>
+                      <p class="btn green"><a href="service-item">コンサルティング事例を見る</a></p>
+                  </section>
+                </div>
             </section>
             <section class="contents">
-                <h3 class="contents-title-c">会社紹介<span>company</span></h3>
-                <header class="header">
-                </header>
-                    <dl class="table">
-                    <dt class="table-lavel">会社名</dt>
-                    <dd class="table-value">株式会社ルーシー</dd>
-                    <dt class="table-lavel">電話番号</dt>
-                    <dd class="table-value">03-1111-2222</dd>
-                    <dt class="table-lavel">住所</dt>
-                    <dd class="table-value">東京都港区西新橋2-7-4 CJビル11階</dd>
-                    </dl>
+                <h3 class="contents-title">会社紹介<span>company</span></h3>
+                <dl class="table">
+                    <dt class="table-title">会社名</dt>
+                    <dd class="table-description">株式会社ルーシー</dd>
+                    <dt class="table-title">電話番号</dt>
+                    <dd class="table-description">03-1111-2222</dd>
+                    <dt class="table-title">住所</dt>
+                    <dd class="table-description">東京都港区西新橋2-7-4 CJビル11階</dd>
+                </dl>
             </section>
-            <section class="contents-b">
-                <h3 class="contents-title-d">お問い合わせ<span>inquiry</span></h3>
-                <header class="header">
-                </header>
-                <form id="form">
+            <section class="contents inquiry">
+                <h3 class="contents-title">お問い合わせ</h3>
+                <form class="form">
                     <dl class="form-item">
-                        <dt class="form-lavel">お名前(必須)</dt>
-                        <dd class="form-value"><input type="text" name="name"></dd>
-                        <dt class="form-lavel">メールアドレス(必須)</dt>
-                        <dd class="form-value"><input type="text" name="mailadress"></dd>
-                        <dt class="form-lavel">題名</dt>
+                        <dt class="form-label">お名前（必須）</dt>
+                        <dd class="form-value"><input type="text" name="yourname"></dd>
+                        <dt class="form-label">メールアドレス（必須）</dt>
+                        <dd class="form-value"><input type="email" name="mail"></dd>
+                        <dt class="form-label">題名</dt>
                         <dd class="form-value"><input type="text" name="title"></dd>
-                        <dt class="form-lavel">メッセージ本文</dt>
-                        <dd class="form-value"><input type="text" name="massage"></dd>
+                        <dt class="form-label">メッセージ本文</dt>
+                        <dd class="form-value"><textarea name="comment"></textarea></dd>
                     </dl>
+                    <p class="btn black"><input type="submit" value="送信"></p>
                 </form>
-                <p class="btn-white"><input type="submit" value="送信"></p>
             </section>
         </article>
     </main>
+
     <footer id="footer">
-        <p class="footer-title">XeoryExtension</p>
-        <div class=footer-content>
-        <dl class="blog-content">
-            <dt class="blog-content-title">ブログコンテンツ</dt>
-            <dd class="blog-content-item"><a href="">記事ページサンプル</a></dd>
-            <dd class="blog-content-item"><a href="">Extensionをダウンロード</a></dd>
+        <h2 class="footer-title">XeoryExtension</h2>
+        <div class="footer-item">
+           <dl class="footer-list">
+            <dt class="footer-list-title">ブログコンテンツ</dt>
+            <dd class="footer-list-item">記事ページサンプル</dd>
+            <dd class="footer-list-item">Extensionをダウンロード</dd>
         </dl>
-        </div>
-        <div class="footer-content">
-        <dl class="footer-list">
+           <dl class="footer-list">
             <dt class="footer-list-title">ソーシャルメディア</dt>
-            <dd class="footer-list-item"><a href="">Twitter</a></dd>
-            <dd class="footer-list-item"><a href="">Facebook</a></dd>
-            <dd class="footer-list-item"><a href="">Google</a></dd>
-            <dd class="footer-list-item"><a href="">Feedly</a></dd>
+            <dd class="footer-list sns-twitter"><a href="https://twitter.com/login?lang=ja">twitter</a></dd>
+            <dd class="footer-list sns-facebook"><a href="https://ja-jp.facebook.com/">Facebook</a></dd>
+            <dd class="footer-list sns-Google+"><a href="https://www.google.com/?hl=ja">Google+</a></dd>
+            <dd class="footer-list sns-Feedly"><a href="https://feedly.com/">Feedly</a></dd>
         </dl>
         </div>
-        <p class="copyright"><small>&copy;Copyright 2020 XeoryExtension. All rights reserved.</small></p>
+        <p class="copyright"><small>&copy; copyright 2020 XeoryExtension. All rights reserved.</small></p>
     </footer>
 </body>
 
